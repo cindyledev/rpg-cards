@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "RPG card generator",
   "main": "generator/generate.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node resources/tools/update-icons.js"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  },
   "devDependencies": {
     "fs-extra": "^10.1.0",
     "mv": "^2.1.1",
@@ -12,9 +19,8 @@
     "walk": "^2.3.14",
     "yauzl": "^2.10.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node resources/tools/update-icons.js"
+  "engines": {
+    "pnpm": ">=6"
   },
   "repository": {
     "type": "git",
@@ -25,8 +31,5 @@
   "bugs": {
     "url": "https://github.com/crobi/rpg-cards/issues"
   },
-  "homepage": "https://github.com/crobi/rpg-cards#readme",
-  "dependencies": {
-    "rimraf": "^3.0.2"
-  }
+  "homepage": "https://github.com/crobi/rpg-cards#readme"
 }
